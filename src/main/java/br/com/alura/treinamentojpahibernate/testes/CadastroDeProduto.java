@@ -13,6 +13,10 @@ import br.com.alura.treinamentojpahibernate.util.JPAUtil;
 public class CadastroDeProduto {
 
 	public static void main(String[] args) {
+		cadastrarProdutoECategoria();
+	}
+	
+	private static void cadastrarProdutoECategoria() {
 		Categoria celulares = new Categoria("CELULARES");
 		
 		Produto celular = new Produto("Xiaomi Redmi", "Muito legal", new BigDecimal("800"), celulares);
